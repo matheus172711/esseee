@@ -1,0 +1,69 @@
+body{
+    background-color: #1E1E1E;
+    color:#FFFF; 
+    font-family: 'Times New Roman';
+}
+.conteudo-principal { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.titulo-principal { 
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+}
+.botao { 
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #00c3ff, #007997);
+    color: rgb(255, 255, 255); 
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo); 
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
+}
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+.botoes { 
+    display: block;
+}
+@media screen and (min-width: 768px) { 
+    .botoes { 
+        display: flex;
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    
+}
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('FUTURO.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+.conteudo {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8); /* Adicione uma cor de fundo para o conteúdo para melhor legibilidade */
+    padding: 20px;
+}
